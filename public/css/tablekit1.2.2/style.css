@@ -1,0 +1,62 @@
+
+div.tabKit table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	font-family: Arial, Helvetica,serif;
+	font-size: 11px;	
+}
+
+div.tabKit td, div.tabKit th {
+	padding: 2px;
+	border: 1px solid #CCC;
+	/*white-space: nowrap;
+	overflow: hidden;*/
+}
+
+/*th {
+   white-space: pre;
+}*/
+
+div.tabKit thead tr, div.tabKit tfoot tr {
+	background-color: #555555;
+	color : #FFF;
+}
+
+div.tabKit tr.rowodd {
+	background-color: #FFF;
+}
+
+div.tabKit tr.roweven {
+	background-color: #F2F2F2;
+}
+
+.sortcol {
+	cursor: pointer;
+	padding-right: 15px;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.sortasc {
+	background-color: #1166FF;
+	background-image: url(up.gif);
+}
+.sortdesc {
+	background-color: #FF6611;
+	background-image: url(down.gif);
+}
+.nosort {
+	cursor: default;
+}
+
+div.tabKit th.resize-handle-active {
+	cursor: e-resize;
+}
+
+div.tabKit div.resize-handle {
+	cursor: e-resize;
+	width: 2px;
+	border-right: 1px dashed #1E90FF;
+	position:absolute;
+	top:0;
+	left:0;
+}

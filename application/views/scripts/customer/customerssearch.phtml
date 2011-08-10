@@ -1,0 +1,9 @@
+<?php 
+	require_once(APPLICATION_PATH.'/views/scripts/sp/mobile_device_detect.php');
+
+	if (mobile_device_detect()) {
+		include APPLICATION_PATH.'/views/scripts/sp/customer/sp_customerssearch.php';
+	} else {
+		include APPLICATION_PATH.'/views/scripts/pc/customer/pc_customerssearch.php';
+	}	
+?>
